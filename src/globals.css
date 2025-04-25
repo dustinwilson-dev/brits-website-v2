@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Spinnaker';
+    src: url('/fonts/Spinnaker-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@theme {
+    --font-spinnaker: 'Spinnaker', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-body: var(--font-inter);
+    --color-BRITS-blue-dark: rgb(26,43,109);
+    --color-BRITS-blue-light: rgb(30,93,147);
+    --color-BRITS-blue-navbar: rgb(65,79,134);
+}
