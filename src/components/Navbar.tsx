@@ -1,24 +1,22 @@
 import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaAngleDown, FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-import { RxHamburgerMenu } from "react-icons/rx";
 import HamburgerMenu from '@/components/ui/HamburgerMenu';
 import More from '@/components/ui/More';
 
 function Navbar() {
     return (
         <header className='sticky top-0 z-50 bg-white'>
-            <nav className='flex items-center w-full justify-between gap-6 py-4 px-15'>
+            <nav className='flex items-center w-full justify-between gap-6 py-4 px-15 lg:justify-around'>
                 <Link href='/' className='max-w-75 h-20 w-75 cursor-pointer relative'>
                     <Image alt="Company Logo" id="logo" src="/images/BRITS Logo.png" fill className='object-contain'/>
                 </Link>
-                <div className='flex gap-8 items-center'>
-                    <Link href='/why-choose-us' className='text-BRITS-blue-light font-semibold hidden lg:block text-nowrap hover:bg-gray-200 py-2 px-3 rounded-3xl hover:text-BRITS-blue-navbar transition-colors duration-300'>Why Choose Us</Link>
-                    <Link href='/' className='text-BRITS-blue-light font-semibold hover:scale-[1.05] hidden lg:block text-nowrap'>Our Services</Link>
-                    <Link href='/industries' className='text-BRITS-blue-light font-semibold hover:scale-[1.05] hidden lg:block text-nowrap'>Industries</Link>
-                    <Link href='/tools-and-tips' className='text-BRITS-blue-light font-semibold hover:scale-[1.05] hidden lg:block text-nowrap'>Tools & Tips</Link>
-                    <Link href='/' className='text-BRITS-blue-light font-semibold hover:scale-[1.05] hidden lg:block text-nowrap'>Contact Us</Link>
+                <div className='flex gap-2 items-center'>
+                    <Link href='/why-choose-us' className='nav-item'>Why Choose Us</Link>
+                    <Link href='/' className='nav-item'>Our Services</Link>
+                    <Link href='/industries' className='nav-item'>Industries</Link>
+                    <Link href='/tools-and-tips' className='nav-item'>Tools & Tips</Link>
+                    <Link href='/' className='nav-item'>Contact Us</Link>
                     <HamburgerMenu />
 
                     {/* <Link href='/' className='text-BRITS-blue-light font-semibold hover:scale-[1.05] hidden lg:flex text-nowrap'>
@@ -26,7 +24,7 @@ function Navbar() {
                     </Link> */}
                     <More />
                 </div>
-                <div>
+                {/* <div>
                     <ul className='items-end gap-8 hidden lg:flex'>
                         <li>
                             <Link href="#">
@@ -44,7 +42,7 @@ function Navbar() {
                             </Link>
                         </li>
                     </ul>
-                </div>
+                </div> */}
             </nav>
 
         </header>

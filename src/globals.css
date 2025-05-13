@@ -24,3 +24,7 @@
     --color-BRITS-blue-light: rgb(30,93,147);
     --color-BRITS-blue-navbar: rgb(65,79,134);
 }
+
+.nav-item {
+    @apply text-BRITS-blue-dark font-semibold hidden lg:block text-nowrap hover:bg-gray-200 py-2 px-3 rounded-3xl hover:text-BRITS-blue-navbar transition-colors duration-300;
+}

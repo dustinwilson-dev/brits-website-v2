@@ -7,7 +7,7 @@ function Industries() {
         <Hero  
             headerText="IT Solutions for Your Industry"
             borderColor={'rgb(26, 43, 109)'} 
-            image='/images/Industries Image.webp' 
+            image='/images/Industries-Image.webp' 
             width={800}
             xoffset={70} 
         />

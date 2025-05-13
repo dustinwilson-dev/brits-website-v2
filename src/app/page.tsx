@@ -2,9 +2,7 @@ import Cards from "@/components/Cards";
 import Carousel from "@/components/Carousel";
 import FindOutMore from "@/components/FindOutMore";
 import Hero from "@/components/Hero";
-import NavbarUpgrade from "@/components/NavbarUpgrade";
 import OurServices from "@/components/OurServices";
-import Image from "next/image";
 import React from 'react'
 
 const page = () => {
@@ -18,7 +16,7 @@ const page = () => {
             needs of our clients. From proactive business SharePoint collaboration, software development, networking and security solutions to cloud computing, and IT 
             consulting, we provide comprehensive support to ensure seamless operations for your business.' 
             borderColor={'rgb(186, 218, 85)'} 
-            image="/images/BRITS Hero Image.webp" 
+            image="/images/BRITS-Hero-Image.webp" 
             width={930}
             xoffset={83} 
             button

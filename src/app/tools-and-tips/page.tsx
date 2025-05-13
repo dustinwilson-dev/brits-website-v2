@@ -8,7 +8,7 @@ function ToolsAndTips() {
             headerText='Tools & Tips'
             bodyText=''
             borderColor={'rgb(186, 218, 85)'} 
-            image='/images/Tools & Tips Image.webp' 
+            image='/images/Tools-&-Tips-Image.webp' 
             width={800}
             xoffset={70} 
         />

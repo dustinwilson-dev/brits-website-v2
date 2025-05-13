@@ -2,7 +2,6 @@ import React from 'react'
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-import { RxHamburgerMenu } from "react-icons/rx";
 import HamburgerMenu from '@/components/ui/HamburgerMenu';
 
 function NavbarUpgrade() {

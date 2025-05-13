@@ -7,7 +7,7 @@ function WhyChooseUs() {
     <>
         <Hero 
         headerText='Why Choose Blue Ribbon IT Services?' 
-        image='/images/Why Choose BRITS Image.webp'
+        image='/images/Why-Choose-BRITS-Image.webp'
         xoffset={75} 
         yoffset={-75} 
         height={45}

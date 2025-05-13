@@ -10,11 +10,9 @@ function Footer() {
                 <div className="flex flex-wrap gap-7 w-full justify-between items-center">
                     <input type="text" placeholder='First Name *' className='h-12 border-b border-white/80 bg-transparent text-white text-[1.3rem] p-2 min-w-0 flex-1 hover:border-b-3 outline-none focus:outline-none' required />
                     <input type="text" placeholder='Last Name *' className='h-12 border-b border-white/80 bg-transparent text-white text-[1.3rem] p-2 min-w-0 flex-1 hover:border-b-[3] outline-none focus:outline-none' required />
-                    {/* <p>hello</p> */}
                 </div>
                 <div className="flex flex-wrap gap-7 w-full justify-between items-center">
                     <input type="email" placeholder='Email *' className='h-12 border-b border-white/80 bg-transparent text-white text-[1.3rem] p-2 min-w-0 flex-1 hover:border-b-[3] outline-none focus:outline-none' required />
-                    {/* <p>hello</p> */}
                 </div>
                 <div className="flex w-full justify-between items-center">
                     {/* <input type="text" placeholder='Enter your message here...' required /> */}

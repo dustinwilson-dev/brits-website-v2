@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
+import { FaAngleDown } from 'react-icons/fa'
 
 const More = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +13,7 @@ const More = () => {
     >
 
         <button 
-            className='text-BRITS-blue-light font-semibold hover:scale-[1.05] hover:cursor-pointer hidden lg:flex items-center justify-center gap-0.5 text-nowrap'
+            className='text-BRITS-blue-dark font-semibold hover:scale-[1.05] hover:cursor-pointer hidden lg:flex items-center justify-center gap-0.5 text-nowrap hover:bg-gray-200 py-2 px-3 rounded-3xl hover:text-BRITS-blue-navbar transition-colors duration-300'
             onMouseEnter={() => setIsOpen(true)}
         >
             
