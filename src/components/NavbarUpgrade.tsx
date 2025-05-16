@@ -9,7 +9,7 @@ function NavbarUpgrade() {
         <div className='flex justify-around pt-5 pb-4'>
             <div className='flex gap-8'>
                 <Link href='/' className='h-10 w-30 cursor-pointer relative -mt-1'>
-                    <Image alt="Company Logo" id="logo" src="/images/BRITS Logo.png" fill className='object-contain'/>
+                    <Image alt="Company Logo" id="logo" src="/images/BRITS-Logo.png" fill className='object-contain'/>
                 </Link>
                 <Link href='/why-choose-us' className='text-BRITS-blue-light font-semibold hover:scale-[1.05] hidden lg:block text-nowrap'>Why Choose Us</Link>
                 <Link href='/' className='text-BRITS-blue-light font-semibold hover:scale-[1.05] hidden lg:block text-nowrap'>Our Services</Link>
@@ -47,7 +47,7 @@ function NavbarUpgrade() {
         // <header className='sticky top-0 z-50 bg-white'>
         //     <nav className='flex items-center w-full justify-between gap-6 py-4 px-15'>
         //         <Link href='/' className='max-w-75 h-20 w-75 cursor-pointer relative'>
-        //             <Image alt="Company Logo" id="logo" src="/images/BRITS Logo.png" fill className='object-contain'/>
+        //             <Image alt="Company Logo" id="logo" src="/images/BRITS-Logo.png" fill className='object-contain'/>
         //         </Link>
         //         <div className='flex gap-8'>
         //             <Link href='/why-choose-us' className='text-BRITS-blue-light font-semibold hover:scale-[1.05] hidden lg:block text-nowrap'>Why Choose Us</Link>

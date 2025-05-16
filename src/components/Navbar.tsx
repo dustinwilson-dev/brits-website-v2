@@ -9,7 +9,7 @@ function Navbar() {
         <header className='sticky top-0 z-50 bg-white'>
             <nav className='flex items-center w-full justify-between gap-6 py-4 px-15 lg:justify-around'>
                 <Link href='/' className='max-w-75 h-20 w-75 cursor-pointer relative'>
-                    <Image alt="Company Logo" id="logo" src="/images/BRITS Logo.png" fill className='object-contain'/>
+                    <Image alt="Company Logo" id="logo" src="/images/BRITS-Logo.png" fill className='object-contain'/>
                 </Link>
                 <div className='flex gap-2 items-center'>
                     <Link href='/why-choose-us' className='nav-item'>Why Choose Us</Link>
