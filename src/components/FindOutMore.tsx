@@ -4,7 +4,7 @@ import IndentedText from "./IndentedText";
 
 function FindOutMore() {
   return (
-    <div className="mb-4 flex min-h-75 w-full flex-col bg-[linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url('/images/BRITS%20Background%20Image.avif')] bg-cover bg-center bg-no-repeat px-12 pt-12 pb-19">
+    <div className="mb-4 flex min-h-75 w-full flex-col bg-[linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url('/images/BRITS-Background-Image.avif')] bg-cover bg-center bg-no-repeat px-12 pt-12 pb-19">
       <div className="relative w-full xl:w-[62%]">
         <p className="font-spinnaker text-BRITS-blue-dark text-[3rem] mb-1">
           Ready to find out more?
