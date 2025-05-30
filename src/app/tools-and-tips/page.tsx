@@ -1,5 +1,11 @@
 import React from 'react'
 import Hero from '@/components/Hero'
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Tools and Tips',
+};
+
 
 function ToolsAndTips() {
   return (
