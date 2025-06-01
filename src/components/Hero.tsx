@@ -42,7 +42,7 @@ function Hero({
         <div className='relative' style={{maxWidth: `max(min(1150px, 100%), ${xoffset}%)`, top: `${yoffset}px`}}>
             {outline && <div className="absolute pt-10 pr-10 pb-2 pl-25 top-3 -right-3 w-full h-full border-3 border-white z-0" style={{maxWidth: `${width}px`}} />}
             <div className='relative bg-[rgb(242,242,242)] ml-auto pt-10 pr-10 pb-2 pl-25' style={{maxWidth: `${width}px`}}>
-                <p className='font-spinnaker text-BRITS-blue-dark text-5xl mb-6'>{headerText}</p>
+                <h1 className='font-spinnaker text-BRITS-blue-dark text-5xl mb-6'>{headerText}</h1>
                 {bodyText && <IndentedText content={bodyText}/>}
             </div>
             {button && <TwoColorButton buttonText='Find out more' width={250}/>}

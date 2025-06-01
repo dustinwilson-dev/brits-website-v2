@@ -6,11 +6,13 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "heroicons": "^2.2.0",
     "next": "15.3.0",
+    "next-sitemap": "^4.2.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0"
@@ -29,7 +31,9 @@
     "typescript": "^5"
   },
   "prettier": {
-    "plugins": ["prettier-plugin-tailwindcss"],
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ],
     "tailwindConfig": "./tailwind.config.js"
   }
 }

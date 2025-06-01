@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://brits-llc.com
+
+# Sitemaps
+Sitemap: https://brits-llc.com/sitemap.xml
