@@ -11,7 +11,11 @@ export const metadata: Metadata = {
   description: "App Development - Administration - Tech Support",
   icons: {
     icon: "/favicon.png",
-  }
+  },
+  openGraph: {
+    siteName: "Blue Ribbon IT Services, LLC",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
