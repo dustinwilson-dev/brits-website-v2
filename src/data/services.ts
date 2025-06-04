@@ -38,6 +38,11 @@ export const data = [
         title: "IT Training",
         body: "Conducting training sessions and workshops to empower employees with IT skills, cybersecurity awareness, and best practices, fostering a culture of digital literacy within client organizations",
         link: "/support-consulting"
+    },
+    {
+        title: "Artificial Intelligence",
+        body: "Empower your business with AI-driven solutions. From process automation to predictive analytics, we design smart systems that learn, adapt, and deliver real-time insights—so you can make faster, data-informed decisions.",
+        link: "/artificial-intelligence"
     }
 ];
 

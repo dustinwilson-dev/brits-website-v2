@@ -22,7 +22,6 @@ function WhyChooseUs() {
 
         <div className="w-full flex justify-center mb-25">
             <div className="max-w-[70%] lg:max-w-[60%] flex flex-col items-center gap-12">
-                <BackButton />
                 <p className='text-lg font-light'>
                     <span className='text-xl font-medium'>Blue Ribbon IT Services, LLC, </span>
                     emerges as a forward-thinking providers of specialized IT solutions. 
@@ -76,7 +75,6 @@ function WhyChooseUs() {
                         We place our clients at the heart of everything we do, dedicating ourselves to delivering unparalleled customer service that emphasizes a personalized and responsive approach.
                     </p></li>
                 </ol>
-                <BackButton />
             </div>
         </div>
     </>

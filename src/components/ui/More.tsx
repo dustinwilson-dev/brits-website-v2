@@ -31,7 +31,6 @@ const More = () => {
         >
             <div className='absolute left-1/2 -translate-x-1/2 -top-0.5 bg-BRITS-blue-navbar rotate-45 w-10 h-10 rounded-sm -z-10' />
             <div className='flex flex-col gap-3'>
-                <Link href='/book-online' className='text-gray-300 hover:text-white font-semibold hidden lg:block text-nowrap'>Book Online</Link>
                 <Link href='/members' className='text-gray-300 hover:text-white font-semibold hidden lg:block text-nowrap'>Members</Link>
             </div>
         </div> }

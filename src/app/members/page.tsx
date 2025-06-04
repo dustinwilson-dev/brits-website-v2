@@ -3,6 +3,10 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'Members',
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 const page = () => {

@@ -1,8 +1,11 @@
-import React from "react";
+"use client"
+
+import React, { useRef } from "react";
 import TwoColorButton from "./TwoColorButton";
 import IndentedText from "./IndentedText";
 
 function FindOutMore() {
+
   return (
     <div className="mb-4 flex min-h-75 w-full flex-col bg-[linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),url('/images/BRITS-Background-Image.avif')] bg-cover bg-center bg-no-repeat px-12 pt-12 pb-19">
       <div className="relative w-full xl:w-[62%]">

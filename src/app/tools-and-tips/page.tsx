@@ -18,7 +18,18 @@ function ToolsAndTips() {
             width={800}
             xoffset={70} 
         />
-        <p className='text-center w-full my-25'>- This page is being updated -</p>
+        <div className="w-full flex justify-center mb-25">
+            <div className="max-w-[70%] lg:max-w-[60%] flex flex-col items-center gap-12">
+                <p className='text-lg font-light'>
+                    Stay ahead with expert insights, practical tools, and time-saving tips from 
+                    Blue Ribbon IT Services. Whether you're looking to streamline your SharePoint 
+                    sites, automate workflows with Power Platform, or strengthen your cybersecurity 
+                    posture, this section offers actionable guidance curated by our IT professionals. 
+                    Explore tutorials, templates, tech recommendations, and troubleshooting tips to 
+                    help your team work smarter and faster—across every project, platform, and device.
+                </p>
+            </div>
+        </div>
         </>
   )
 }

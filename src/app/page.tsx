@@ -18,8 +18,7 @@ const page = () => {
             borderColor={'rgb(186, 218, 85)'} 
             image="/images/BRITS-Hero-Image.webp" 
             width={930}
-            xoffset={83} 
-            button
+            xoffset={83}
         />
 
         <OurServices />

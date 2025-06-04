@@ -15,12 +15,12 @@ function TwoColorButton({
     width = 100, 
     height = 70, 
     leftColor = 'rgb(26, 43, 109)', 
-    rightColor = 'rgb(212, 19, 23)'
+    rightColor = 'rgb(212, 19, 23)',
 }: TwoColorButtonProps) {
-  const [hoverColor, setHoverColor] = useState<string | null>(null);
+    const [hoverColor, setHoverColor] = useState<string | null>(null);
 
   return (
-    <div className='absolute right-0 flex hover:cursor-pointer' style={{width: `${width}px`, height: `${height}px`}}>
+    <button className='absolute right-0 flex hover:cursor-pointer' style={{width: `${width}px`, height: `${height}px`}}>
         <div className='flex-1 text-white transition-colors duration-300 flex justify-center items-center px-2 py-5' style={{backgroundColor: hoverColor || leftColor}}
           onMouseEnter={() => setHoverColor(leftColor)}
           onMouseLeave={() => setHoverColor(null)}
@@ -34,7 +34,7 @@ function TwoColorButton({
           onMouseLeave={() => setHoverColor(null)}>
             <p className='whitespace-nowrap text-white'>{buttonText}</p>
         </div>
-    </div>
+    </button>
   )
 }
 

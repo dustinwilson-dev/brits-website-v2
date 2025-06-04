@@ -30,11 +30,12 @@ const HamburgerMenu = () => {
                             <HiX className='size-7' />
                         </button>
                     </div>
-                    <Link href='/why-choose-us' onClick={() => setIsOpen(false)} className='text-BRITS-blue-light font-semibold text-nowrap w-full p-7'>Why Choose Us</Link>
                     <Link href='/' onClick={() => setIsOpen(false)} className='text-BRITS-blue-light font-semibold text-nowrap w-full p-7'>Our Services</Link>
+                    <Link href='/why-choose-us' onClick={() => setIsOpen(false)} className='text-BRITS-blue-light font-semibold text-nowrap w-full p-7'>Why Choose Us</Link>
                     <Link href='/industries' onClick={() => setIsOpen(false)} className='text-BRITS-blue-light font-semibold text-nowrap w-full p-7'>Industries</Link>
                     <Link href='/tools-and-tips' onClick={() => setIsOpen(false)} className='text-BRITS-blue-light font-semibold text-nowrap w-full p-7'>Tools & Tips</Link>
                     <Link href='/' onClick={() => setIsOpen(false)} className='text-BRITS-blue-light font-semibold text-nowrap w-full p-7'>Contact Us</Link>
+                    <Link href='/members' onClick={() => setIsOpen(false)} className='text-BRITS-blue-light font-semibold text-nowrap w-full p-7'>Members</Link>
                 </div>
         </div>
     </>
