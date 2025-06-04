@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useRef } from "react";
+import React from "react";
 import TwoColorButton from "./TwoColorButton";
 import IndentedText from "./IndentedText";
 

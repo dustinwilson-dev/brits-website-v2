@@ -1,6 +1,5 @@
 import React from 'react'
 import Hero from '@/components/Hero'
-import BackButton from '@/components/BackButton'
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
