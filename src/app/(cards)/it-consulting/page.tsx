@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
-        <div className='h-40 flex items-center justify-center'>- Under construction -</div>
+        <div className='h-40 flex items-center justify-center'>- This page is under construction -</div>
     </>
   )
 }

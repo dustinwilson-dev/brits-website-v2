@@ -14,7 +14,7 @@ const page = () => {
   return (
     <>
         <Hero 
-            headerText="- Under construction -"
+            headerText="- This page is under construction -"
             xoffset={29}
             image="/test"
             outline
