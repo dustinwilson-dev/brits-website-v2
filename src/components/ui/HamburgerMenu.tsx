@@ -7,6 +7,12 @@ import Link from 'next/link';
 
 const HamburgerMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
+    
+    const scrollToFooter = () => {
+        setIsOpen(false);
+        const footer = document.getElementById('footer');
+        footer?.scrollIntoView({ behavior: 'smooth' });
+    };
 
   return (
     <>
@@ -34,8 +40,8 @@ const HamburgerMenu = () => {
                     <Link href='/why-choose-us' onClick={() => setIsOpen(false)} className='text-BRITS-blue-light font-semibold text-nowrap w-full p-7'>Why Choose Us</Link>
                     <Link href='/industries' onClick={() => setIsOpen(false)} className='text-BRITS-blue-light font-semibold text-nowrap w-full p-7'>Industries</Link>
                     <Link href='/tools-and-tips' onClick={() => setIsOpen(false)} className='text-BRITS-blue-light font-semibold text-nowrap w-full p-7'>Tools & Tips</Link>
-                    <Link href='/' onClick={() => setIsOpen(false)} className='text-BRITS-blue-light font-semibold text-nowrap w-full p-7'>Contact Us</Link>
                     <Link href='/members' onClick={() => setIsOpen(false)} className='text-BRITS-blue-light font-semibold text-nowrap w-full p-7'>Members</Link>
+                    <button className='text-BRITS-blue-light font-semibold text-nowrap w-full p-7 text-left' onClick={scrollToFooter}>Contact Us</button>
                 </div>
         </div>
     </>

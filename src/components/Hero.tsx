@@ -38,11 +38,11 @@ function Hero({
                 fill
             />
         </div>
-        <div className='absolute w-full h-6' style={{borderBottom: `solid ${borderColor} 23px`}}></div>        
+        <div className='absolute w-full h-6' style={{borderBottom: `solid ${borderColor} 23px`}}></div>
         <div className='relative' style={{maxWidth: `max(min(1150px, 100%), ${xoffset}%)`, top: `${yoffset}px`}}>
             {outline && <div className="absolute pt-10 pr-10 pb-2 pl-25 top-3 -right-3 w-full h-full border-3 border-white z-0" style={{maxWidth: `${width}px`}} />}
-            <div className='relative bg-[rgb(242,242,242)] ml-auto p-10 text-center md:pt-10 md:pr-10 md:pb-2 md:pl-25 md:text-start' style={{maxWidth: `${width}px`}}>
-                <h1 className='font-spinnaker text-BRITS-blue-dark text-5xl mb-6'>{headerText}</h1>
+            <div className='relative bg-[rgb(242,242,242)] ml-auto p-10 text-center md:pt-10 md:pr-10 md:pl-25 md:text-start flex flex-col gap-6' style={{maxWidth: `${width}px`}}>
+                <h1 className='font-spinnaker text-BRITS-blue-dark text-5xl'>{headerText}</h1>
                 {bodyText && <IndentedText content={bodyText}/>}
             </div>
             {button && <TwoColorButton buttonText='Find out more' width={250}/>}

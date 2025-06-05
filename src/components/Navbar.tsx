@@ -10,8 +10,6 @@ function Navbar() {
     const scrollToFooter = () => {
         const footer = document.getElementById('footer');
         footer?.scrollIntoView({ behavior: 'smooth' });
-        console.log("okay");
-        console.log(footer);
     };
 
     return (
@@ -25,8 +23,8 @@ function Navbar() {
                     <Link href='/why-choose-us' className='nav-item'>Why Choose Us</Link>
                     <Link href='/industries' className='nav-item'>Industries</Link>
                     <Link href='/tools-and-tips' className='nav-item'>Tools & Tips</Link>
-                    <button className='nav-item hover:cursor-pointer' onClick={scrollToFooter}>Contact Us</button>
                     <Link href='/members' className='nav-item'>Members</Link>
+                    <button className='nav-item hover:cursor-pointer' onClick={scrollToFooter}>Contact Us</button>
 
                     <HamburgerMenu />
 

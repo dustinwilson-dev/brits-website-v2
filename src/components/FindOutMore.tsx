@@ -27,11 +27,11 @@ function FindOutMore() {
             </>
           }
         />
-        <TwoColorButton
+        {/* <TwoColorButton
           buttonText="Get free evaluation"
           width={225}
           height={50}
-        />
+        /> */}
       </div>
     </div>
   );

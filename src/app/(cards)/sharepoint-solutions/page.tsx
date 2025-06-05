@@ -2,7 +2,7 @@ import React from 'react'
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "Sharepoint Support & Integration",
+  title: "SharePoint Solutions",
   robots: {
     index: false,
     follow: false,
