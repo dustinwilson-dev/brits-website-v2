@@ -1,8 +1,8 @@
 "use client"
 
 import React from "react";
-import TwoColorButton from "./TwoColorButton";
 import IndentedText from "./IndentedText";
+// import TwoColorButton from "./TwoColorButton";
 
 function FindOutMore() {
 
