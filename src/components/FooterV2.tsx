@@ -1,7 +1,19 @@
-import React from 'react'
+"use client"
+
+import React, { useState } from 'react'
 import Link from 'next/link'
 
 function Footer() {
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  const handleSubmit = async (formData: FormData) => {
+    await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+    });
+  }
 
   return (
     <footer className="flex justify-center items-center bg-BRITS-blue-dark p-12" id="footer">
@@ -19,6 +31,7 @@ function Footer() {
                 </div>
                 <button className="flex justify-center items-center px-7 py-2 h-12 text-[1.3rem] bg-transparent border border-white rounded-full text-white cursor-pointer hover:border-3">Submit</button>
             </form>
+            {error && <p className='text-white'>Please wait a moment before sending another message</p>}
             <div className="flex flex-col items-center sm:flex-row w-full justify-between gap-7">
                 <p className='text-white font-extralight'>Phone: 1 (866) 274-8778</p>
                 <p className='text-white font-extralight'>Email:&nbsp;
