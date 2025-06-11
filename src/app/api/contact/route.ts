@@ -1,4 +1,5 @@
 import { Resend } from 'resend';
+import dotenv from 'dotenv';
 import { Redis } from '@upstash/redis';
 import { Ratelimit } from '@upstash/ratelimit';
 import { headers } from 'next/headers';
@@ -29,7 +30,7 @@ const schema = z.object({
 });
 
 if (process.env.NODE_ENV !== 'production') {
-    require('dotenv').config();
+    dotenv.config();
 }
 
 export async function POST(req: Request) {
