@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@/globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+import FooterV2 from "@/components/FooterV2";
 
 export const metadata: Metadata = {
   title: {
@@ -31,7 +31,7 @@ export default function RootLayout({
         <Navbar />
         {/* <QuickLinks /> */}
         {children}
-        <Footer />
+        <FooterV2 />
       </body>
     </html>
   );

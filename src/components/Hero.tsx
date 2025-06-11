@@ -1,6 +1,4 @@
-"use client"
-
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import IndentedText from '@/components/IndentedText';
 import Image from 'next/image';
 
@@ -27,12 +25,6 @@ function Hero({
     height = 70,
     outline = false
 }: HeroProps) {
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-    setIsVisible(true);
-    }, []);
-
   return (
     <div className='w-full'>
         <div className='w-full bg-[rgba(65,79,134,1)] relative' style={{ height: `${height}vh` }}>
