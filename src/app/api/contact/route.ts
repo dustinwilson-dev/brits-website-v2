@@ -29,8 +29,6 @@ const schema = z.object({
   phone: z.string().max(20).optional(),
 });
 
-dotenv.config();
-
 export async function POST(req: Request) {
     try {
         const { name, email, message, phone } = await req.json();
