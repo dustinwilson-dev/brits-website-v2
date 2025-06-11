@@ -1,5 +1,4 @@
 import { Resend } from 'resend';
-import dotenv from 'dotenv';
 import { Redis } from '@upstash/redis';
 import { Ratelimit } from '@upstash/ratelimit';
 import { headers } from 'next/headers';
@@ -28,6 +27,10 @@ const schema = z.object({
   message: z.string().min(1).max(1000),
   phone: z.string().max(20).optional(),
 });
+
+if (process.env.NODE_ENV !== 'production') {
+    require('dotenv').config();
+}
 
 export async function POST(req: Request) {
     try {
