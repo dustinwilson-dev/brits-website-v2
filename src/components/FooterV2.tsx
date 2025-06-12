@@ -52,7 +52,7 @@ function Footer() {
                 <div className="flex flex-col flex-wrap gap-7 h-full w-full justify-between items-center">
                     <input type="text" 
                         placeholder='Name *' 
-                        className='h-12 w-full border-b border-white/80 bg-transparent text-white text-[1.3rem] p-2 min-w-0 flex-1 hover:border-b-3 outline-none focus:outline-none' 
+                        className='h-12 w-full border-b border-white/80 bg-transparent text-white text-[1.1rem] p-2 min-w-0 flex-1 hover:border-b-3 outline-none focus:outline-none' 
                         {...register('name')}
                         required 
                     />
@@ -62,7 +62,7 @@ function Footer() {
                 <div className="flex flex-col flex-wrap gap-7 w-full justify-between items-center">
                     <input type="email" 
                         placeholder='Email *' 
-                        className='h-12 w-full border-b border-white/80 bg-transparent text-white text-[1.3rem] p-2 min-w-0 flex-1 hover:border-b-[3] outline-none focus:outline-none' 
+                        className='h-12 w-full border-b border-white/80 bg-transparent text-white text-[1.1rem] p-2 min-w-0 flex-1 hover:border-b-[3] outline-none focus:outline-none' 
                         {...register('email')}
                         required 
                     />
@@ -74,7 +74,7 @@ function Footer() {
                         cols={30} 
                         rows={8} 
                         placeholder='Enter your message here...' 
-                        className='outline-none w-full focus:outline-none bg-transparent border border-white/80] h-60 text-[1.3rem] p-2 flex-1 hover:border-3 text-white' 
+                        className='outline-none w-full focus:outline-none bg-transparent border border-white/80] h-60 text-[1.1rem] p-2 flex-1 hover:border-3 text-white' 
                         {...register('message')}
                         required>
                     </textarea>
