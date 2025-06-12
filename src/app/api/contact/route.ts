@@ -5,23 +5,6 @@ import { Ratelimit } from '@upstash/ratelimit';
 import { headers } from 'next/headers';
 import { z } from 'zod';
 
-const redis = new Redis({
-  url: process.env.UPSTASH_REDIS_REST_URL,
-  token: process.env.UPSTASH_REDIS_REST_TOKEN,
-});
-
-const shortLimiter = new Ratelimit({
-  redis,
-  limiter: Ratelimit.fixedWindow(2, '45s'), // 2 request per 45s
-  prefix: 'short',
-});
-
-const dailyLimiter = new Ratelimit({
-  redis,
-  limiter: Ratelimit.fixedWindow(10, '86400s'), // 10 request per day max
-  prefix: 'daily',
-});
-
 const schema = z.object({
   name: z.string().min(1).max(100),
   email: z.string().email(),
@@ -35,6 +18,23 @@ if (process.env.NODE_ENV !== 'production') {
 
 export async function POST(req: Request) {
     try {
+        const redis = new Redis({
+            url: process.env.UPSTASH_REDIS_REST_URL,
+            token: process.env.UPSTASH_REDIS_REST_TOKEN,
+        });
+
+        const shortLimiter = new Ratelimit({
+            redis,
+            limiter: Ratelimit.fixedWindow(2, '45s'), // 2 request per 45s
+            prefix: 'short',
+        });
+
+        const dailyLimiter = new Ratelimit({
+            redis,
+            limiter: Ratelimit.fixedWindow(10, '86400s'), // 10 request per day max
+            prefix: 'daily',
+        });
+
         const { name, email, message, phone } = await req.json();
 
         //Honeypot field. If phone part of form is filled out, the form was filled by a bot
