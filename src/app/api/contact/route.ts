@@ -78,15 +78,13 @@ export async function POST(req: Request) {
 
         await resend.emails.send({
             from: 'onboarding@resend.dev',
-            to: 'dwilson@blueribbonitservices.llc',
+            to: 'JobInquiry@blueribbonitservices.llc',
             subject: 'New Contact Form Submission',
             text: `
                 Name: ${name}
                 Email: ${email}
                 Message:
                 ${message}
-                Test:
-                ${forwardedFor}
             `,
         });
 
