@@ -10,7 +10,14 @@ function OurServices() {
                 IT services that drive business growth and innovation. By leveraging our expertise, clients can 
                 focus on their core operations with confidence, knowing that their IT infrastructure is in capable hands.
             </p>
-            <a className='text-white border-2 p-4 rounded-3xl hover:bg-BRITS-blue-light' href="/images/BRITSCapabilitiesStatement.pdf" target="_blank" rel="noopener noreferrer">Capabilities Statement</a>
+            <a className='text-white border-2 p-4 rounded-3xl hover:bg-BRITS-blue-light inline-flex items-center' href="/images/BRITSCapabilitiesStatement.pdf" target="_blank" rel="noopener noreferrer">
+              Capabilities Statement 
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 ml-1">
+                <path strokeLinecap="round" strokeLinejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+              </svg>
+              
+
+            </a>
 
         </div>
     </div>
