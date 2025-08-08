@@ -32,6 +32,7 @@ function Hero({
                 alt={`Background image`} 
                 src={image} 
                 className='opacity-65 object-cover'
+                priority
                 fill
             />}
         </div>
