@@ -53,6 +53,7 @@ function Carousel() {
       </div>
       <button
         onClick={PreviousItem}
+        aria-label="Previous testimonial"
         className="absolute top-0 h-full cursor-pointer border-none bg-transparent p-12 text-[3rem] text-white transition-colors duration-300 hover:bg-[rgb(0,0,0,0.1)]"
         style={{ left: 0 }}
       >
@@ -60,6 +61,7 @@ function Carousel() {
       </button>
       <button
         onClick={NextItem}
+        aria-label="Next testimonial"
         className="absolute top-0 h-full cursor-pointer border-none bg-transparent p-12 text-[3rem] text-white transition-colors duration-300 hover:bg-[rgb(0,0,0,0.1)]"
         style={{ right: 0 }}
       >
@@ -69,6 +71,7 @@ function Carousel() {
       <div className="flex items-center justify-center">
         {carouselData.map((item, currentIndex) => (
           <button
+            aria-label={`Testimonial ${currentIndex + 1}`}
             className={`cursor-pointer border-none bg-transparent p-[5px] text-[0.6rem] text-white hover:scale-[1.2] ${
               index === currentIndex && "scale-[1.2]"
             }`}
