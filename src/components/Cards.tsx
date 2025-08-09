@@ -4,10 +4,12 @@ import Card from "./Card";
 
 function Cards() {
   return (
-    <div className="grid grid-cols-[repeat(auto-fit,279px)] items-center justify-center gap-12 px-3 py-12 lg:grid-cols-[repeat(3,279px)]">
-      {cardData.map((data, key) => (
-        <Card title={data.title} body={data.body} link={data.link} key={key} />
-      ))}
+    <div className="flex justify-center w-full my-5 px-10">
+      <div className="flex flex-wrap justify-center items-stretch gap-12 lg:max-w-[75%]">
+        {cardData.map((data, key) => (
+          <Card title={data.title} body={data.body} link={data.link} key={key} />
+        ))}
+      </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
-import Link from "next/link";
+"use client"
+
 import React from "react";
 
 type CardProps = {
@@ -8,16 +9,23 @@ type CardProps = {
 };
 
 function Card({ title, body, link }: CardProps) {
+    
+  const scrollToFooter = () => {
+      const footer = document.getElementById('footer');
+      footer?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <div className="relative mb-10 flex h-full w-full flex-col gap-5 bg-[rgb(242,242,242)] p-7 shadow-[10px_10px_0px_1px_rgba(0,0,0,0.15)]">
-      <p className="text-BRITS-blue-dark text-3xl">{title}</p>
+    <div className="basis-75 relative pb-15 flex flex-col bg-[rgb(242,242,242)] p-7 shadow-[10px_10px_0px_1px_rgba(0,0,0,0.15)]">
+      <p className="text-BRITS-blue-dark text-3xl mb-3">{title}</p>
       <p className="leading-[1.7] font-[400] tracking-wider">{body}</p>
-      <Link
-        href={link}
-        className="hover:text-BRITS-blue-dark absolute bottom-5 text-black"
+      <button
+        onClick={scrollToFooter}
+        aria-label="Scroll to contact form"
+        className="hover:text-BRITS-blue-dark absolute bottom-5 text-black hover:cursor-pointer"
       >
         + Learn More
-      </Link>
+      </button>
     </div>
   );
 }

@@ -1,13 +1,13 @@
 export const data = [
     {
-        title: "SharePoint Solutions",
-        body: "Offers wide range of features, mainly configured to create Intranet and offers wide range of collaboration tools",
+        title: "SharePoint, Power Platform & Copilot Solutions",
+        body: "Build powerful intranets, streamline collaboration, automate processes, and boost productivity with AI-driven Copilot tools",
         link: "/sharepoint-solutions"
     },
     {
-        title: "Software Development",
-        body: "Creating custom software solutions tailored to meet specific business requirements, including web applications, mobile apps, and enterprise software development",
-        link: "/managed-it-services"
+        title: "Web Development & Migration",
+        body: "Creating custom built web, mobile, and enterprise solutions tailored to your business, with responsive design, smooth zero-downtime migrations, and optimized performance",
+        link: "/404"
     },
     {
         title: "Tech Support & Administration",
@@ -41,9 +41,15 @@ export const data = [
     },
     {
         title: "Artificial Intelligence",
-        body: "Empower your business with AI-driven solutions. From process automation to predictive analytics, we design smart systems that learn, adapt, and deliver real-time insights—so you can make faster, data-informed decisions.",
+        body: "Empower your business with AI-driven solutions. From process automation to predictive analytics, we design smart systems that learn, adapt, and deliver real-time insights—so you can make faster, data-informed decisions",
         link: "/artificial-intelligence"
+    },
+    {
+        title: "Software Development",
+        body: "Creating custom software solutions tailored to meet specific business requirements, including web applications, mobile apps, and enterprise software development",
+        link: "/managed-it-services"
     }
+    
 ];
 
 export default data;
