@@ -5,10 +5,9 @@ import React from "react";
 type CardProps = {
   title: string;
   body: string;
-  link: string;
 };
 
-function Card({ title, body, link }: CardProps) {
+function Card({ title, body }: CardProps) {
     
   const scrollToFooter = () => {
       const footer = document.getElementById('footer');
