@@ -15,7 +15,7 @@ function Card({ title, body }: CardProps) {
   };
 
   return (
-    <div className="basis-75 relative pb-15 flex flex-col bg-[rgb(242,242,242)] p-7 shadow-[10px_10px_0px_1px_rgba(0,0,0,0.15)]">
+    <div className="relative pb-15 flex flex-col bg-[rgb(242,242,242)] p-7 shadow-[10px_10px_0px_1px_rgba(0,0,0,0.15)] h-full">
       <p className="text-BRITS-blue-dark text-3xl mb-3">{title}</p>
       <p className="leading-[1.7] font-[400] tracking-wider">{body}</p>
       <button
