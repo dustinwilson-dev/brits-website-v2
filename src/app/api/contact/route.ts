@@ -78,7 +78,7 @@ export async function POST(req: Request) {
 
         await resend.emails.send({
             from: 'onboarding@resend.dev',
-            to: 'dwilson@blueribbonitservices.llc',
+            to: process.env.TO_EMAIL!,
             subject: 'New Contact Form Submission',
             text: `
                 Name: ${name}
