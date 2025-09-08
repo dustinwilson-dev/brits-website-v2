@@ -77,17 +77,19 @@ function Navbar() {
                 />
               </svg>
             </button>
-            <div className="absolute left-1/2 hidden -translate-x-1/2 shadow-lg group-hover:block">
-              <div className="mt-2 rounded-md border-1 border-gray-300 bg-gray-200 p-5">
+            <div className="absolute hidden shadow-lg group-hover:block">
+              <div className="mt-2 rounded-md bg-white p-5">
                 <button
                   className="nav-item mb-2 block hover:cursor-pointer"
                   onClick={scrollToFooter}
                 >
-                  General Inquiries
+                  General/Job Inquiries
                 </button>
                 <Link
                   href="https://outlook.office.com/book/BRITSConnectWithUs@blueribbonitservices.llc/?ismsaljsauthenabled"
                   className="nav-item"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Bookings: Request Consultation
                 </Link>
