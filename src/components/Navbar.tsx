@@ -60,16 +60,35 @@ function Navbar() {
           </a>
 
           <div className="group relative">
-            <button className="nav-item hover:cursor-pointer">Contact Us</button>
+            <button className="text-BRITS-blue-dark hover:text-BRITS-blue-navbar hidden items-center rounded-3xl px-3 py-2 font-semibold text-nowrap transition-colors duration-300 hover:cursor-pointer hover:bg-gray-200 lg:flex">
+              <span>Contact Us </span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={1.5}
+                stroke="currentColor"
+                className="ml-2 size-3 transition-all duration-200 group-hover:rotate-180"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </button>
             <div className="absolute left-1/2 hidden -translate-x-1/2 shadow-lg group-hover:block">
-              <div className="mt-2 rounded-md bg-gray-200 p-5 border-1 border-gray-300">
+              <div className="mt-2 rounded-md border-1 border-gray-300 bg-gray-200 p-5">
                 <button
-                  className="block hover:cursor-pointer mb-2 nav-item"
+                  className="nav-item mb-2 block hover:cursor-pointer"
                   onClick={scrollToFooter}
                 >
                   General Inquiries
                 </button>
-                <Link href="https://outlook.office.com/book/BRITSConnectWithUs@blueribbonitservices.llc/?ismsaljsauthenabled" className="nav-item">
+                <Link
+                  href="https://outlook.office.com/book/BRITSConnectWithUs@blueribbonitservices.llc/?ismsaljsauthenabled"
+                  className="nav-item"
+                >
                   Bookings: Request Consultation
                 </Link>
               </div>
