@@ -96,33 +96,9 @@ function Navbar() {
               </div>
             </div>
           </div>
-          {/* <button className='nav-item hover:cursor-pointer' onClick={scrollToFooter}>Contact Us</button> */}
 
           <HamburgerMenu />
-
-          {/* <Link href='/' className='text-BRITS-blue-light font-semibold hover:scale-[1.05] hidden lg:flex text-nowrap'>
-                        <p>More</p> <FaAngleDown />
-                    </Link> */}
         </div>
-        {/* <div>
-                    <ul className='items-end gap-8 hidden lg:flex'>
-                        <li>
-                            <Link href="#">
-                                <FaFacebookF className='text-[1.2rem] text-BRITS-blue-light hover:scale-130' />
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="#">
-                                <FaTwitter className='text-[1.2rem] text-BRITS-blue-light hover:scale-130' />
-                            </Link>
-                        </li>
-                        <li>
-                            <Link href="#">
-                                <FaLinkedinIn className='text-[1.2rem] text-BRITS-blue-light hover:scale-130' />
-                            </Link>
-                        </li>
-                    </ul>
-                </div> */}
       </nav>
     </header>
   );
